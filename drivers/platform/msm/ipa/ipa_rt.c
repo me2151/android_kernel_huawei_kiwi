@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2014, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2014,2017 The Linux Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -53,7 +53,7 @@ int __ipa_generate_rt_hw_rule_v2(enum ipa_ip_type ip,
 	int pipe_idx;
 
 	if (buf == NULL) {
-		memset(tmp, 0, IPA_RT_FLT_HW_RULE_BUF_SIZE/4);
+		memset(tmp, 0, (IPA_RT_FLT_HW_RULE_BUF_SIZE/4));
 		buf = (u8 *)tmp;
 	}
 
