@@ -3061,7 +3061,6 @@ static int __qseecom_send_cmd(struct qseecom_dev_handle *data,
 	unsigned long flags;
 	struct qseecom_registered_app_list *ptr_app;
 	bool found_app = false;
-	int name_len = 0;
     struct huawei_ca_verify_cmd* huawei_cmd_ptr = NULL;
 	void *cmd_buf = NULL;
 	size_t cmd_len;
